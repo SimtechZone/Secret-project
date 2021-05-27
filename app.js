@@ -76,7 +76,7 @@ passport.use(
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
       callbackURL:
-        "/auth/google/secrets",
+        "https://intense-waters-56793.herokuapp.com/auth/google/secrets",
     },
     function (accessToken, refreshToken, profile, cb) {
       // console.log(profile);
@@ -94,7 +94,7 @@ passport.use(
       clientID: process.env.FACEBOOK_ID,
       clientSecret: process.env.FACEBOOK_SECRET,
       callbackURL:
-        "/auth/facebook/secrets",
+        "https://intense-waters-56793.herokuapp.com/auth/facebook/secrets",
       profileFields: ["id", "displayName", "photos", "email"],
     },
     function (accessToken, refreshToken, profile, cb) {
